@@ -1,0 +1,34 @@
+# IntelliJ IDEA related files
+.idea/
+*.iml
+
+# Maven build output
+target/
+!target/classes # Keep the compiled classes if needed for some reason
+
+# Gradle build output
+.gradle/
+build/
+
+# Spring Boot executable jar
+*.jar
+*.war
+*.jar.original
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# IDE backup files
+*.bak
+
+# Environment specific files (if you have them - consider not committing these)
+.env
+*.properties.local
+*.yml.local
+
+Creds/
+*secure-connect*.zip
+

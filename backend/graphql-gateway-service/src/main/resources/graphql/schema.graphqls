@@ -1,0 +1,41 @@
+type Product {
+    id: ID!
+    name: String!
+    description: String
+    price: Float
+}
+
+type Review {
+    id: ID!
+    product_id: String!
+    user_id: String
+    rating: Int
+    comment: String
+    timestamp: String
+}
+
+type Anime {
+    uid: ID!
+    title: String
+    synopsis: String
+    img_url: String
+}
+
+type AnimeListPayload {
+    items: [Anime!]!
+    totalCount: Int!
+    page: Int!
+    pageSize: Int!
+    totalPages: Int!
+}
+
+type Query {
+    products: [Product]
+    reviews(product_id: String): [Review]
+    anime(page: Int = 1, pageSize: Int = 10): AnimeListPayload!
+}
+
+type Mutation {
+    createProduct(name: String!, description: String, price: Float): Product
+    createReview(product_id: String!, user_id: String, rating: Int, comment: String): Review
+}
