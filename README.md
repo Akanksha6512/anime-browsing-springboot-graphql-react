@@ -1,7 +1,7 @@
 # Anime Browsing Platform (Spring Boot, GraphQL, React)
 
 ## Short Application Video
-
+<div>This is a test div. </div>
 <video width="560" height="315" controls loop autoplay muted>
   <source src="assets/videos/demo.mp4" type="video/mp4">
   Your browser does not support the video tag.
