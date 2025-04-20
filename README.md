@@ -1,7 +1,6 @@
 # Anime Browsing Platform (Spring Boot, GraphQL, React)
 
 
-
 ![Short Application Demo](assets/videos/demo.gif)
 
 
